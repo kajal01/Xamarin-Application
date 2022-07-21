@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApplication.MainPage">
+
+    <StackLayout>
+
+        <Label  HorizontalTextAlignment="Center" Text="SIMPLE INTEREST"   TextColor="WhiteSmoke" FontSize="Title" BackgroundColor="SkyBlue"   />
+
+        <Label Text="Enter Principal Amount" FontSize="Medium"  />
+        <Entry x:Name="principal_amount" Keyboard="Numeric"/>
+
+        <Label Text="Enter Time Period in Years " FontSize="Medium" />
+        <Entry x:Name="time_period" Keyboard="Numeric"/>
+
+        <Label Text="Enter Rate of Interest(%)" FontSize="Medium"/>
+        <Entry x:Name="rate_of_interest" Keyboard="Numeric"/>
+
+        <Button x:Name="calculate" Text="Calculate" HorizontalOptions="Center" Clicked="calculate_Clicked"/>
+        <Label x:Name="lblSimpleInterest" HorizontalOptions="Center" FontSize="Large" Text="Interest Amount : "/>
+        <Label x:Name="lblTotalAmount" HorizontalOptions="Center" FontSize="Large" Text="Total Amount : "/>
+
+        <Button Text="Clear" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
